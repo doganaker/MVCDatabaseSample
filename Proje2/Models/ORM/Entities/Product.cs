@@ -17,5 +17,6 @@ namespace Proje2.Models.ORM.Entities
         public int UnitsOnOrder { get; set; }
         public int ReorderLevel { get; set; }
         public bool Discontinued { get; set; }
+        public List<OrderDetail> OrderDetails { get; set; }
     }
 }
