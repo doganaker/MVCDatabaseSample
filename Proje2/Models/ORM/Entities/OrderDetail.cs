@@ -8,9 +8,11 @@ namespace Proje2.Models.ORM.Entities
     public class OrderDetail
     {
         public int OrderID { get; set; }
+        public Order Order { get; set; }
         public int ProductID { get; set; }
+        public Product Product { get; set; }
         public decimal UnitPrice { get; set; }
         public int Quantity { get; set; }
-        public dynamic Discount { get; set; }
+        public decimal Discount { get; set; }
     }
 }

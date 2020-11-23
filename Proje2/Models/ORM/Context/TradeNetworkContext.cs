@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Proje2.Models.Configurations;
 using Proje2.Models.ORM.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace Proje2.Models.ORM.Context
 
         protected override void OnModelCreating(ModelBuilder mb)
         {
-
+            mb.ApplyConfigurationsFromAssembly(typeof(CategoryConfiguration).Assembly);
         }
 
         public DbSet<Category> Categories { get; set; }

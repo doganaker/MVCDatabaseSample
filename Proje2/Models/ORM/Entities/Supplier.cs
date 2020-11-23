@@ -18,7 +18,7 @@ namespace Proje2.Models.ORM.Entities
         public string Country { get; set; }
         public string Phone { get; set; }
         public string Fax{ get; set; }
-        public dynamic HomePage { get; set; }
+        public string HomePage { get; set; }
         public List<Product> Products { get; set; }
     }
 }
